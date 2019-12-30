@@ -14,7 +14,7 @@ class TreeArray<T: Addictive<T>> (private val size:Int, init:(Int) -> T){
                 a.dat[i] += x
                 i += lowBit(i)
             }
-            i=range.endInclusive+1
+            i=range.last +1
             while (i<a.size) {
                 a.dat[i] += t
                 i += lowBit(i)
